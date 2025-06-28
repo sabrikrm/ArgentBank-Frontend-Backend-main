@@ -40,7 +40,7 @@ const authSlice = createSlice({
       state.token = null;
       localStorage.removeItem("token");
     },
-  }, // Les extra reducers mettent à jour l'état en fonction du cycle de vie (en attente, réussi, rejeté) du thunk asynchrone loginUser, garantissant ainsi un flux clair depuis l'initiation de l'appel API jusqu'au succès ou à l'échec.
+  }, 
   extraReducers: (builder) => {
     builder
       .addCase(loginUser.pending, (state) => {

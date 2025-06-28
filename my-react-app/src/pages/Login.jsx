@@ -3,9 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../state/Authentification/authSlice";
 
-// error est récupéré depuis Redux pour afficher le message d'erreur.
-// handleSubmit envoie l’email et le mot de passe à Redux et va déclencher `loginUser` défini dans `authSlice`.
-// Si la connexion réussit, l’utilisateur est **redirigé vers `/profile`
+
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -17,7 +15,7 @@ const Login = () => {
   const [rememberMe, setRememberMe] = useState(false);
   const [formError, setFormError] = useState("");
 
-  const { error } = useSelector((state) => state.auth); // pour récupérer l’éventuelle erreur stockée dans Redux.
+  const { error } = useSelector((state) => state.auth); //recup store
 
   const handleSubmit = async (e) => {
     e.preventDefault();
