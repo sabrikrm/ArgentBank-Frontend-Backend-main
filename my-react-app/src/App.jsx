@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
-import Error from "./pages/Error";
+
 import "./index.css";
 import "font-awesome/css/font-awesome.min.css";
 
